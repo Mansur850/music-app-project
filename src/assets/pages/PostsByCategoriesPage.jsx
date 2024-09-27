@@ -13,7 +13,7 @@ function PostsByCategoriesPage () {
     useEffect (() => {
     async function fetchCategory() {
         try {
-            const response = await axios.get(`https://87440e50ac31979f.mokky.dev/category/${id}`);
+            const response = await axios.get(`https://3266ef9348a5ee00.mokky.dev/category/${id}`);
             setCategory(response.data);
         } catch (e) {
             console.log(e);
@@ -23,7 +23,7 @@ function PostsByCategoriesPage () {
         async function fetchPosts() {
             try {
                 setIsLoading(true);
-                const response = await axios.get('https://87440e50ac31979f.mokky.dev/post');
+                const response = await axios.get('https://3266ef9348a5ee00.mokky.dev/post');
                 setPosts(response.data); 
             } catch (error) {
                 console.log(error);

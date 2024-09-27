@@ -14,7 +14,7 @@ function PostList () {
         async function fetchPosts() {
             try {
                 setIsLoading(true);
-                const response = await axios.get('https://87440e50ac31979f.mokky.dev/post');
+                const response = await axios.get('https://3266ef9348a5ee00.mokky.dev/post');
                 setPosts(response.data); //  json
             } catch (error) {
                 setIsError(true);

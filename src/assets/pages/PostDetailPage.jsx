@@ -17,7 +17,7 @@ function PostDeatailPage () {
         async function fetchPost() {
             try {
                 setIsLoading(true);
-                const response = await axios.get(`https://87440e50ac31979f.mokky.dev/post/${id}`);
+                const response = await axios.get(`https://3266ef9348a5ee00.mokky.dev/post/${id}`);
                 setPosts(response.data);
             } catch (error) { 
                 setIsError(true)

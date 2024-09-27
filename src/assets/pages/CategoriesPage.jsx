@@ -16,7 +16,7 @@ function CategoriesPage () {
         async function fetchCategories() {
             try {
                 setIsLoading(true);
-                const response = await axios.get(`https://87440e50ac31979f.mokky.dev/category`);
+                const response = await axios.get(`https://3266ef9348a5ee00.mokky.dev/category`);
                 setCategories(response.data);
             } catch(e) {
                 setIsError(true);
